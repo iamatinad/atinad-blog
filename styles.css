@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  color: white;
+}
+
+.main_header {
+  display: flex;
+  background: #1f232c;
+  font-family: "avenir", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  padding-left: 20px;
+}
+
+@font-face {
+  font-family: avenir;
+  src: url("/assets/avenir.otf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("/assets//Montserrat.ttf");
+}
+
+.logo_img {
+  width: 25px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.tinad {
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.nav_links {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  margin-left: 300px;
+  margin-top: 26px;
+  font-family: "avenir", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,a:active{
+    color: #fc5c65;
+}
+
+.video_hero{
+  width: 100%;
+  height: auto;
+  display: block;
+  
+
+}
+
+.text_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; 
+}
+
+.text_overlay span {
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-size: 3em; 
+    display: block;
+    margin: 0;
+}
+
+.become_text {
+    color: #ff5a5f; 
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  background-color: #1f232c; 
+  color: white;
+  padding-bottom: 25px;
+ padding-top: 15px;
+  text-align: center;
+  width: 100%;
+  font-family: "avenir", Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) {
+  .text_overlay span {
+      font-size: 4vw; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .text_overlay span {
+      font-size: 8vw; 
+  }
+
+  .second_line span {
+      font-size: 7vw; 
+  }
+}
